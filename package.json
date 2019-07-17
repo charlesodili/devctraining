@@ -1,0 +1,20 @@
+{
+  "name": "devctraining",
+  "version": "1.0.0",
+  "description": "The Andela/Facebook Training for Developer Circles Mini-site",
+  "main": "src/index.html",
+  "scripts": {
+    "develop-site": "parcel src/index.html --out-dir dev-build",
+    "build-site": "parcel build src/index.html --out-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-andela:charlesodili/devctraining.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
