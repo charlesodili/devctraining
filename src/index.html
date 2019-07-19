@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DevC Training Program</title>
 
-    <style>
-        html, body{
-            margin: 0;
-            padding: 0;
-        }
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        body { 
-            background: #eee;
-        }
+    <link rel="stylesheet" href="css/main.css">
 
-        main {
-            width: 35%;
-            height: 200px;
-            border-radius: 20px;
-            border: 1px solid #808080;
-            background: #fff;
-            margin: 10em auto;
-            padding: 2em;
-        }
-    </style>
+    <script defer src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
-<body>
-    
-    <main>
-        <h3>Andela DevC Training Program</h3>
-        <p>watch out for more information ...</p>
+
+<body class="mdc-typography">
+
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <h4 class="mdc-top-app-bar__title">
+                    <img src="images/andela-logo.svg" alt="Andela">
+                </h4>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <div data-view="banner-wrap">
+            <div data-view="banner-inner"></div>
+            <!-- <img src="images/main-bg.jpg" alt="" /> -->
+        </div>
+
+        <div data-view="about">
+            
+            </div>
     </main>
 </body>
+
 </html>
