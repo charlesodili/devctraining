@@ -20,11 +20,11 @@
 
 @font-face {
   font-family: 'Letter Gothic Std';
-  src: url('fonts/LetterGothicStd.otf'); 
+  src: url('fonts/LetterGothicStd.otf');
 
-  src: url('fonts/LetterGothicStd.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/LetterGothicStd.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/LetterGothicStd.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('fonts/LetterGothicStd.woff2') format('woff2'),
+    url('fonts/LetterGothicStd.woff') format('woff'),
+    url('fonts/LetterGothicStd.ttf') format('truetype'); /* Safari, Android, iOS */
 }
 
 body {
@@ -57,7 +57,7 @@ main .btn {
 }
 
 main .btn img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 main [data-view="banner-wrap"] {
@@ -75,10 +75,10 @@ main [data-view="banner-wrap"] {
 }
 
 [data-view="banner-inner"] [data-hash] {
-  margin-top: 4em;
+  margin-top: 2em;
   color: #ffaf30;
   font-family: "DIN Pro";
-  font-size: 25px;
+  font-size: 2em;
   letter-spacing: -0.33px;
   line-height: 32px;
   text-align: center;
@@ -88,7 +88,7 @@ main [data-view="banner-wrap"] {
   margin: 0;
   color: #ffffff;
   font-family: "DIN Pro Bold";
-  font-size: 55px;
+  font-size: 4em;
   font-weight: bold;
   letter-spacing: -0.44px;
   line-height: 71px;
@@ -98,7 +98,7 @@ main [data-view="banner-wrap"] {
 [data-view="banner-inner"] [data-why] {
   color: #ffffff;
   font-family: Lato;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 300;
   letter-spacing: -0.4px;
   line-height: 36px;
@@ -111,15 +111,15 @@ main [data-view="banner-wrap"] {
 }
 
 [data-view="banner-inner"] img.partner {
-    height: 36px;
+  height: 36px;
 }
 
 [data-view="banner-inner"] .cta {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 [data-view="banner-inner"] .btn {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 [data-view="about-wrap"] {
@@ -131,8 +131,13 @@ main [data-view="banner-wrap"] {
   background: #fff;
 }
 
-[data-view="about-wrap"] .content .more img {
-  display: block;
+[data-view="about-wrap"] .content .more {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+}
+
+[data-view="about-wrap"] .content .about-banner {
+  background: url('../images/engineers.jpg') no-repeat;
+  background-size: cover;
 }
 
 [data-view="about-wrap"] .content .details {
@@ -157,167 +162,229 @@ main [data-view="banner-wrap"] {
 }
 
 [data-view="about-wrap"] .content hr {
-    display: inline-block;
-    height: 2px;
-	width: 76px;
-	background-color: #3359DF;
+  display: inline-block;
+  height: 2px;
+  width: 76px;
+  background-color: #3359df;
 }
 
-[data-view="about-wrap"] .extras {
-    text-align: center;
+[data-view="about-extras"] .extras {
+  text-align: center;
 }
 
-[data-view="about-wrap"] .extras p {
-    display: block;
-    width: 75%;
-    margin: 40px auto;
-	color: #0A21A8;
-	font-family: "DIN Pro";
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 51px;
-	text-align: center;
+[data-view="about-extras"] .extras p {
+  display: block;
+  width: 75%;
+  margin: 40px auto;
+  color: #0a21a8;
+  font-family: "DIN Pro";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 51px;
+  text-align: center;
 }
 
-[data-view="about-wrap"] .extras .skills p {
-	color: #4E5664;
-	font-family: Lato;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 24px;
-	text-align: center;
+[data-view="about-extras"] .extras .skills p {
+  color: #4e5664;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+}
+
+[data-view="about-engineers"] {
+  display: none;
 }
 
 main [data-view="how-it-works"] {
-    background: #0A21A8;
-    padding-bottom: 5em;
+  background: #0a21a8;
+  padding-bottom: 5em;
 }
 
 [data-view="how-it-works"] h1 {
-	color: #FFFFFF;
-	font-family: "DIN Pro";
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 51px;
-	text-align: center;
+  color: #ffffff;
+  font-family: "DIN Pro";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 51px;
+  text-align: center;
 }
 
 [data-view="how-it-works"] .step {
-	height: 322px;
-	width: 256px;
-	border-radius: 3px;
-	background-color: #FFFFFF;
-	box-shadow: 0 0 5px 0 rgba(0,0,0,0.15);
+  height: 322px;
+  padding: 0 1.5em;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .step .btn.cta {
-    display: block;
-    margin: 1em auto;
-    width: 65%;
+  display: block;
+  margin: 1em auto;
+  width: 65%;
+  margin-top: 1em;
 }
 
 .step .count {
-	height: 42px;
-	width: 42px;
-	color: #FFFFFF;
-	font-family: "DIN Pro";
-	font-size: 23px;
-	font-weight: bold;
-	line-height: 29px;
-    text-align: center;
-    background-color: #98BE24;
-    border-radius: 50%;
-    margin: 1.5em auto;
+  height: 37px;
+  width: 42px;
+  padding-top: 6px;
+  color: #ffffff;
+  font-family: "DIN Pro";
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+  background-color: #98be24;
+  border-radius: 50%;
+  margin: 1.5em auto;
 }
 
 .step .title {
-	color: #3359DF;
-	font-family: "DIN Pro";
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 26px;
-	text-align: center;
+  color: #3359df;
+  font-family: "DIN Pro";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  height: 52px;
 }
 
 .step .about {
-    min-height: 34px;
-	color: #4E5664;
-	font-family: Lato;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 17px;
-	text-align: center;
+  min-height: 34px;
+  color: #4e5664;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
 }
 
 [data-view="partners"] {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 [data-view="partners"] .devc-partner {
-    text-align: right;
+  text-align: right;
 }
 
 [data-view="partners"] .andela-partner {
-    text-align: left;
+  text-align: left;
 }
 
 [data-view="partners"] .partner p {
-    color: #4E5664;
-	font-family: Lato;
-	font-size: 16px;
-	line-height: 24px;
+  color: #4e5664;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 [data-view="partners"] .devc-partner p {
-	text-align: right;
+  text-align: right;
 }
 
 [data-view="partners"] .andela-partner p {
-	text-align: left;
+  text-align: left;
 }
 
 [data-view="partners"] .separator {
-    display: block;
-    margin: 0 auto;
-    margin-top: -35px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -35px;
 }
 
 [data-view="partners"] .separator-line {
-    width: 1px;
-    height: 310px;
-    background:  #3359DF;
+  width: 1px;
+  height: 310px;
+  background: #3359df;
 }
 
 [data-view="partners"] .separator-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-top: 0;
-    background: #FFAF30;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 0;
+  background: #ffaf30;
 }
 
+
 [data-view="partners"] .faqs {
-    margin-top: 3em;
-    text-align: center;
+  margin-top: 3em;
+  text-align: center;
 }
 
 [data-view="partners"] .faqs h4 {
-	color: #0A21A8;
-	font-family: "DIN Pro";
-	font-size: 27.5px;
-	letter-spacing: -0.22px;
-	line-height: 36px;
-	text-align: center;
+  color: #0a21a8;
+  font-family: "DIN Pro";
+  font-size: 27.5px;
+  letter-spacing: -0.22px;
+  line-height: 36px;
+  text-align: center;
 }
 
 footer {
-	height: 97px;
-	background: linear-gradient(155.42deg, #122FBB 0%, #020C72 100%);
+  padding: 1.5em;
+  background: linear-gradient(155.42deg, #122fbb 0%, #020c72 100%);
 }
 
 footer img {
-    display: inline-block;
-    margin: 1.5em 2em;
+  display: inline-block;
+}
+
+footer .copyright {
+	color: #FFFFFF;
+	font-family: "Letter Gothic Std";
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+  text-align: right;
+  /* margin-top: -2em; */
+}
+
+@media (max-width: 840px) {
+  [data-view="about-wrap"] .content .details {
+    margin: 1em;
+  }
+
+  [data-view="partners"] .separator-wrap {
+    display: none;
+  }
+
+  [data-view="partners"] .devc-partner,
+  [data-view="partners"] .andela-partner {
+    text-align: center;
+  }
+
+  [data-view="partners"] .devc-partner p,
+  [data-view="partners"] .andela-partner p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 720px) {
+  
+}
+
+@media (max-width: 540px) {
+  [data-view="banner-inner"] {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  [data-view="about-wrap"] {
+    margin-top: 0;
+  }
+
+  [data-view="about-wrap"] .content .more {
+    box-shadow: none;
+  }
+
+  [data-view="about-engineers"] {
+    display: block;
+  }
 }
 
 /* background: url('../images/main-bg.jpg') center top no-repeat;*/
