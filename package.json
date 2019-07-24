@@ -4,8 +4,8 @@
   "description": "The Andela/Facebook Training for Developer Circles Mini-site",
   "main": "src/index.html",
   "scripts": {
-    "develop-site": "parcel src/index.html --out-dir dev-build",
-    "build-site": "parcel build src/index.html --out-dir docs"
+    "dev": "parcel src/index.html --out-dir dev-build",
+    "build": "parcel build src/index.html --out-dir docs"
   },
   "repository": {
     "type": "git",
